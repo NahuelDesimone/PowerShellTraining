@@ -10,6 +10,18 @@ Write-Host $persona[-1] #Obtengo el último elemento de un array
 $persona += "Boca Juniors" #Le agrego un elemento al arreglo, en ese caso sería el club que es hincha
 Write-Host $persona
 
+
+write-Host "se va a imprimir el foreach"
+foreach ($elemento in $persona) {
+    Write-Host $elemento
+}
+
+write-Host "se va a imprimir el for común"
+
+for ($i=0; $i -lt $persona.Count ;$i++){
+    Write-Host $persona[$i]
+}
+
 #Los arrayList son como los arreglos pero no son fijos, sino que son dinámicos
 #Lo que quiere decir esto es que se pueden agregar o quitar elementos sin necesidad de crear otro array
 
@@ -78,6 +90,12 @@ switch ($color) {
         Write-Host "Color no valido"
     }
 }
+
+
+
+
+
+
 
 
 
