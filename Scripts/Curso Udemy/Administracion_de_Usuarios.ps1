@@ -89,7 +89,13 @@ Set-ADUser sirve para modificar los parámetros de los usuarios ya creados
 Set-ADUser -Identity "neymar.juniors" -HomePage "https://google.com" -Office "Sistemas" 
 En este caso se puede ver que busco al usuario por su identity (samAccountName) y le modifico los parametros que quiera
 
+$usuario = Get-ADUser -Identity "neymar.juniors" -Properties HomePage, Office
+$usuario.HomePage = "udemy.com"
+$usuario.Office = "Finanzas"
 
+Set-ADUser -Instance $usuario
+
+Unlock-ADAccount -Identity 'Carlos Gomez' #Sirve para desbloquear usuarios bloqueados
 
 
 
