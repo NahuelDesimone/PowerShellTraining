@@ -16,3 +16,5 @@ New-ADUser `
 -ChangePasswordAtLogon $true `
 -AccountPassword(ConvertTo-SecureString "P@ssword1" -AsPlainText -Force) `
 -Enabled $true
+
+
