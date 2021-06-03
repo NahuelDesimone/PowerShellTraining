@@ -18,3 +18,5 @@ New-ADUser `
 -Enabled $true
 
 
+#Con este comando vamos a poder redirigir la Unidad Organizativa en donde se van a crear los usuarios por defecto
+redirusr "nombreDeLaUnidadOrganizativa" 
