@@ -24,3 +24,5 @@ $grupo = (Read-Host -Prompt "Ingrese los grupos")
 $usuarios = (Read-Host -Prompt "Ingrese los usuarios")
 
 Add-ADGroupMember -Identity $grupo -Memeber $usuarios 
+
+
